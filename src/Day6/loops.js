@@ -91,7 +91,39 @@ let numbers = 10;
 process.stdout.write(numbers+'');      // only works with string values
 
 // It will go into infinite loop
-// second will be always true
-for( ; ; ) {
-    console.log('abc');
-}
+// second condition will be always true in the below code
+// for( ; ; ) {
+//     console.log('abc');
+// }
+
+
+// do-while loop
+// print 1 to 10
+let p = 1 ;
+do {
+    console.log(p);
+    p++;
+} while(p<=10);
+
+
+// below loop will execute atleast once as the condition is not satisfied
+let q = 1 ;
+do {
+    q++;
+    console.log(q);
+    q++;
+} while(q<=10);
+// it will print 2 to 11
+
+
+let k = 10;
+do {
+    console.log(k);
+    k--;
+    break;                  // break - can not be written without the loops : break designed for loops
+} while (k>=1);
+
+// Use cases of do while
+// 1. When iterations are not fixed
+// waiting for the element and the element is already available on the page
+// 
