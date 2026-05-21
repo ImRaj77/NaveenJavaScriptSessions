@@ -129,3 +129,8 @@ let emp = {
 console.log(emp.devices.length);
 let empJson = JSON.stringify(emp);
 console.log(empJson);
+
+
+// Memory usage method
+
+const mem = process.memoryUsage
