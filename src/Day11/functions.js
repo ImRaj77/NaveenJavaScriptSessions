@@ -97,6 +97,11 @@ console.log('-------');
 // print : browser is launched
 // return : true/false (boolean)
 // worng browserName : Invalid browser, return false
+/**
+ * 
+ * @param {String} bowserName 
+ * @returns 
+ */
 function launchTheBrowser(bowserName){
     console.log('Launching the browser: '+bowserName);
     switch (bowserName.trim().toLowerCase()) {                         // JavaScript is a case sensitive
