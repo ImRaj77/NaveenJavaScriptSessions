@@ -32,3 +32,19 @@
 // 1. automatically will get called by itself
 
 // We can not reuse it
+
+
+// IIFE with arrow function
+( () => {
+    console.log('Hello World');
+    console.log('Bye');
+})();
+
+let flag = ( (browserName) => {
+    console.log('Hello World', browserName);
+    console.log('Bye');
+    return true;
+})('Chrome');
+console.log(flag);
+
+// IIFE Function will be stored in the Heap Memory
