@@ -120,3 +120,48 @@ console.log(i4);                        // 3
 let i5 = cart3.indexOf('imac',i4+1);    //3rd occurance of imac
 console.log(i5);                        //6
 console.log(cart3.lastIndexOf('imac')); //6
+
+
+// 9. includes:
+let numm = [1,2,3,4,5,6,7];
+console.log(numm.includes(8));          // false
+console.log(numm.includes(3));          // true
+
+// 10. join
+// join all the elements into a string with a separator
+let arr = ['Rajesh', 'Automation', 'Labs'];
+let newArr = arr.join('-');
+console.log(newArr);                    // Rajesh-Automation-Labs
+
+let newArr1 = arr.join('|');
+console.log(newArr1);                   // Rajesh|Automation|Labs
+
+
+// 11. toString:
+let arr1 = ['Rajesh', 'Automation', 'Labs'];
+console.log(arr1.toString());           // Rajesh,Automation,Labs
+console.log(arr1);                      // [ 'Rajesh', 'Automation', 'Labs' ]
+
+
+//12. at: element at a given index... it supports negative index
+let nummm = [1,2,3,4,5,6,7];
+console.log(nummm.at(-1));              // 7
+console.log(nummm.at(-3));              // 5
+console.log(nummm.at(4));               // 5
+console.log(nummm[-1]);                 // undefined
+console.log(nummm.at(-7));              // 1
+
+
+// 13. forEach : 
+// not a loop it's a method
+// Iterate each and every element
+let cartt = ['imac', 'samsung', 'iphone', 'macbook', 'keyboard', 'tom'];
+cartt.forEach((product)=> {
+    console.log(product.toUpperCase());
+})
+
+cartt.forEach( (e) => console.log(e.length) );
+
+let number = [1,2,3,4,5];
+number.forEach( (num) => console.log(num * 2) );
+
