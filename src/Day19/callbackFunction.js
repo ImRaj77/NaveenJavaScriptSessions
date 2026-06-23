@@ -153,3 +153,21 @@ performAPICall(get);
 performAPICall(post);
 performAPICall(put);
 performAPICall(deletee);
+
+// wait for sometime (4 sec) and then callback - perform some action
+setTimeout( () => {
+    console.log('Hello World');
+}, 4000);
+
+
+function getData(){
+    console.log('getting data from DB');
+    setTimeout( () => {
+        //get the data from API via DB
+    }, 4000);
+};
+
+getData( () => {
+    console.log('User Data');
+});
+
